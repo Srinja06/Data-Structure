@@ -1,6 +1,5 @@
 
   #include <stdio.h>
-//#include<process.h>
 #include<stdlib.h>
 #define maxsize 5
 

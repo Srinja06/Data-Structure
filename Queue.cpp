@@ -42,11 +42,6 @@ void insert_from_rear()
     printf("\n Queue overflow");
     else
     {
-        if(front==-1&&rear==-1)
-        {
-            front=0;
-            rear=0;
-        }
         rear++;
         queue[rear]=item;
     }
@@ -60,7 +55,7 @@ void delete_from_front()
     else
     {
         del=queue[front];
-        printf("the item deleted is %d",queue[front]);
+        printf("\n the item deleted is %d",del);
         front++;
     }
 }
@@ -68,7 +63,7 @@ void delete_from_front()
 void display()
 {
     int i;
-    if(rear==-1&&front==0)
+    if(rear==-1&&front==0||front>rear)
     printf("\n Queue is empty");
     else
     {
